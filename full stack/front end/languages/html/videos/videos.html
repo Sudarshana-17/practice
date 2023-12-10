@@ -1,20 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    The controls attribute adds video controls, like play, pause, and volume.
-
-It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.
-
-The source element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.
-
-The text between the video and video tags will only be displayed in browsers that do not support the video element.
-
-
-  <video width="200px" height="200px" controls src="VID20191018120942 - Copy.mp4"></video>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row text-center p-5">
+           <h1>HTML Video Tag</h1> 
+        </div>
+        <div class="row ">
+            <div class="col">
+                <h3>What is Video Tag ?</h3><br>
+                
+                
+                In HTML (Hypertext Markup Language), the video tag is used to embed video files or video streams on a web page. It allows you to include video content that can be played directly within the web browser. The video tag supports various attributes and can contain multiple source elements to provide different video formats for compatibility with different browsers.<br>
+                <br>width and height: These attributes specify the width and height of the video player on the web page.<br>
+                <br>controls: This attribute adds playback controls to the video player, such as play, pause, and volume control.<br>
+                
+            </div>
+            <div class="col">
+                <h3 class=" text-center">
+                    Example
+                </h3><br>
+                &lt;Doctype! html &gt;<br>
+                &lt;html &gt;<br>
+                &lt;head &gt;<br>
+                &lt;title&gt;.............. &lt;/title&gt;              
+                &lt;/head &gt;<br>
+              &lt;body&gt;<br>     
+              <br> <h6>&lt;video src="VID20191018120942 - Copy.mp4"  width="300px" height="300px" controls"&gt;</h6><br>
+               &lt;/body&gt;<br> 
+                &lt;/html&gt;<br>
+            </div>
+           <div class="col text-center">
+            <h3>Output</h3><br>
+            <video src="VID20191018120942 - Copy.mp4" width="300px" height="300px" controls></video>
+    
+    </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
