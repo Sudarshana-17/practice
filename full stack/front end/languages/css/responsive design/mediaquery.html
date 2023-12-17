@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+     
+        .item{
+            background-color: red;
+            display: none;
+        }
+        @media (max-width:255px){
+            #item-1{
+                display: block;
+            }
+        }
+        @media (min-width:256px) and (max-width:500px){
+            #item-2{
+                display: block;
+                background-color: green;
+            }
+        }
+        @media (min-width:501px) and (max-width:700px){
+            #item-3{
+                display: block;
+                background-color:blue;
+            }
+        }
+        @media (min-width:701px) and (max-width:900px){
+            #item-4{
+                display: block;
+                background-color: yellow;
+            }
+        }
+        @media (min-width:901px){
+            #item-5{
+                display: block;
+                background-color:black;
+            }
+        }
+      
+    </style>
+ 
+        <h1 class="item" id="item-1">screen size from 0-- to  255px-- small mobile</h1>
+        <h1 class="item" id="item-2">screen size from 256px-- to 500px-- mobile</h1>
+        <h1 class="item" id="item-3">screen size from 501px-- to 700px-- tab</h1>
+        <h1 class="item" id="item-4">screen size from 701px-- to 900px-- laptop</h1>
+        <h1 class="item" id="item-5">screen size from 901px-- to large tv</h1>
+    
+</body>
+</html>
