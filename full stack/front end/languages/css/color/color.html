@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <link rel="stylesheet" href="./style.css">
+</head>
+  <body>
+    <div class="container">
+        <div class="row text-center p-5">
+           <h1>CSS colors</h1> 
+        </div>
+        <div class="row ">
+            <div class="col">
+                <h3>What is CSS color</h3><br>
+                
+               
+                In Cascading Style Sheets (CSS), colors can be defined using various formats. The most common ways to specify colors in CSS are:<br>
+                <br>1.Keyword Names: CSS supports a set of predefined color names, such as red, blue, green, etc.<br>
+                <br>2.Hexadecimal Notation: Colors can be represented using a hexadecimal notation, which consists of a # followed by six characters (three sets of two characters) representing the RGB (Red, Green, Blue) values.<br>
+                <br>3.RGB Function: Colors can also be defined using the rgb() function, which takes three parameters representing the Red, Green, and Blue values in the range 0 to 255.<br>
+                <br>4.RGBA Function: Similar to rgb(), the rgba() function is used for specifying a color along with an alpha (transparency) value. The alpha value ranges from 0 (completely transparent) to 1 (completely opaque)<br>
+                <br>5.HSL Function: The hsl() function allows you to specify a color using Hue, Saturation, and Lightness values. <br>
+                <br>6.HSLA Function: Similar to hsl(), the hsla() function includes an additional alpha (transparency) parameter.
+            </div>
+            <div class="col">
+                <h3 class=" text-center">
+                    Example
+                </h3><br>
+                &lt;Doctype! html &gt;<br>
+                &lt;html &gt;<br>
+                &lt;head &gt;<br>
+                &lt;title&gt;.............. &lt;/title&gt;              
+                &lt;/head &gt;<br>
+              &lt;body&gt;<br>     
+            <br> <h6> &lt;div style="background-color: red;">im inline css&lt;/div&gt; <br>
+              &lt;h1&gt;im in page&lt;/h1&gt; <br>
+              &lt;h3&gt;external&lt;/h3&gt; <br>
+              &lt;style&gt; <br>
+                  h1{ <br>
+                      background-color: aqua; <br>
+                  } <br>
+              &lt;/style&gt; <br> </h6>
+              <br> &lt;/body&gt;<br> 
+                &lt;/html&gt;<br> <br> 
+
+                <h5>to use external css create css page</h5> <br>
+                h5{ <br>
+                    background-color: green; <br>
+                }
+            </div>
+           <div class="col text-center">
+            <h3>Output</h3><br><br><br>
+            <div style="background-color: red;">im inline css</div>
+            <h2>im in page</h2>
+            <h4>external</h4>
+            <style>
+                h2{
+                    background-color: aqua;
+                }
+            </style>
+    
+    </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

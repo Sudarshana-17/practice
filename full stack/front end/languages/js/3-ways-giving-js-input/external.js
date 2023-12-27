@@ -1,0 +1,1 @@
+document.write('iam external thirsd way of output')

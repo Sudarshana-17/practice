@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+            display: grid;
+            /*grid-template-rows: 200px 200px;
+            grid-template-columns: 200px 200px 200px;*/
+           /* grid-template-rows: repeat(2,200px);
+            grid-template-columns:repeat(3,200px) ; */
+           /* grid-template-rows: repeat(2,200px);
+            grid-template-columns:repeat(3,1fr) ;*/
+            grid-template-rows: repeat(6,200px);
+            grid-template-columns:repeat(auto-fill,minmax(200px,1fr)) ;
+
+        }
+        .box{
+            background-color: red;
+           /* width: 200px;
+            height: 200px;*/
+            color: white;
+            font-size: 40px;
+            margin: 10px;
+        }
+    </style>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+        <div class="box">box-6</div>
+    </div>
+</body>
+</html>
