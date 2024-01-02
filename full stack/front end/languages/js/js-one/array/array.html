@@ -1,0 +1,33 @@
+<script src="./test.js"></script>
+
+<script>
+    var a="apple"
+    var b="ball"
+    var c="cat"
+    console.log(a,b,c)
+    var array=["apple","ball","cat","mango"]
+    console.log(array)
+    console.log(array[0])
+    console.log(array[1])
+    console.log(array[2])
+    array.map((giftroom)=>{
+        console.log("map--",giftroom)
+    })
+
+    let unique=[2,2,3,3,4,4]
+    let uniqueElements = unique.reduce((acc, current) => 
+
+    {
+
+      if (!acc.includes(current))
+
+        {
+           acc.push(current);
+        }
+
+      return acc;
+
+    }, []);
+
+     console.log(uniqueElements);
+</script>
