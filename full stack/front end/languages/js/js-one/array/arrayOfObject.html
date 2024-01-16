@@ -1,0 +1,13 @@
+<script>
+    let students=[
+        {work:'student',name:'sudeep',age:10,gf:false},
+        {work:'student',name:'jayanth',age:9,gf:false},
+        {name:'prathap',age:9,gf:true},
+    ]
+    console.log(students[0].name)
+    console.log(students[2].name)
+    let r=students.filter((item)=>{console.log(item.gf);return item.gf==true})
+    console.log(r)
+    let d=students.find((item)=>{console.log(item.gf);return item.gf==true})
+    console.log(d)
+</script>

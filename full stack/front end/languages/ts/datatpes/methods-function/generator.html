@@ -1,0 +1,13 @@
+<script>
+    function* iceCreamGiver(){
+        yield "ice cream 1"
+        yield "ice cream 2"
+        yield "ice cream 3"
+    }
+    console.log("jhoti",iceCreamGiver().next())
+    let prathap=iceCreamGiver()
+    console.log("prathap",prathap.next())
+    console.log("prathap",prathap.next())
+    console.log("prathap",prathap.next())
+    console.log("prathap",prathap.next())
+</script>

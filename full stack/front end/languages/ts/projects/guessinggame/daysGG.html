@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+        <h1>guessing game</h1>
+        <h1 id="day">weekday</h1>
+        <button onclick="randomDay()">Click for a random day</button>
+    </center>
+
+    <script>
+        function randomDay() {
+            let days=['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
+            let day=document.getElementById('day');
+            let logic=Math.floor(Math.random() * days.length);
+            let randomDay=days[logic];
+            day.innerHTML=randomDay;
+            console.log(randomDay);
+        }
+
+        randomDay();
+    </script>
+</body>
+</html>

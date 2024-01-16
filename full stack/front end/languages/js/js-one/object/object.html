@@ -1,0 +1,21 @@
+<div id="root"></div>
+<script>
+    let img="./1.jpg"
+    let title="good camera"
+    let price=200
+    
+
+    let item1={image:img,title:title,price:price}
+    let allproduct=[item1,item1,item1,item1,item1]
+
+    let div=document.getElementById('root')
+    allproduct.map((items)=>{
+        console.log(items.image) 
+        let img=document.createElement('img')
+        img.src=items.image
+        img.style.height="200px"
+        div.appendChild(img)
+    })
+    
+
+</script>

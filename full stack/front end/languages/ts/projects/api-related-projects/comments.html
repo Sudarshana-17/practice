@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+       let div= document.getElementById('root')
+       
+      async  function apiCaller(){
+  let data=fetch('https://jsonplaceholder.typicode.com/comments')
+  data=await (await data).json()
+  console.log(data)
+  data.map((item)=>{
+    let name=document.createElement('h1')
+    name.innerHTML=item.name
+    div.appendChild(name)
+    let email=document.createElement('h2')
+    email.innerHTML=item.email
+    div.appendChild(email)
+    let PID=document.createElement('h3')
+    PID.innerHTML=item.postId
+    div.appendChild(PID)
+    let id=document.createElement('h2')
+    id.innerHTML=item.id
+    div.appendChild(id)
+    let BODy=document.createElement('h2')
+    BODy.innerHTML=item.body
+    div.appendChild(BODy)
+
+  })
+        }
+        apiCaller()
+    </script>
+</body>
+</html>

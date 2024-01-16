@@ -1,0 +1,25 @@
+<script>
+    const SingleTon = (() => {
+        let salary
+        function salarydept() {}
+            function dispachsalary() {
+                salary = new salarydept
+                return salary
+            }
+            return{
+                getSalary:()=>{
+                    if(!salary){
+                        return dispachsalary()
+
+                    }else{
+                        return salary
+                        
+                    }
+                }
+            }
+        
+    })()
+    var jayanth1=SingleTon.getSalary()
+    var jayanth2=SingleTon.getSalary()
+    console.log(jayanth1==jayanth2)
+</script>
