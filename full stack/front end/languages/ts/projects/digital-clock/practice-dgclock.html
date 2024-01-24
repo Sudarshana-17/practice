@@ -1,0 +1,36 @@
+<h1 id="clock"></h1>
+<button onclick="timer()">start</button>
+<button onclick="pause()">pause</button>
+<button onclick="stop()">stop</button>
+<script>
+    let sudarshan=document.getElementById('clock')
+    let sec=0
+    let minute=0
+    let hour=0
+    function timer(){
+        timer=setInterval(()=>{
+       sudarshan.innerText=`hour : ${hour} minute : ${minute} second: ${sec++}`
+       if (sec==60){
+        minute++
+        sec=0
+       }
+       if (minute==60){
+        hour++
+        minute=0
+       }
+    },1000)
+    }
+    function pause(){
+        clearInterval(timer)
+
+    }
+    function stop(){
+        clearInterval(timer);
+        sec = 0;
+        minute = 0;
+        hour = 0;
+        sudarshan.innerText = `hour : ${hour} minute : ${minute} second: ${sec}`;
+    }
+
+    
+</script>

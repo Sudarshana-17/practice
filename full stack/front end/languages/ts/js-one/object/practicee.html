@@ -1,0 +1,18 @@
+<div id="vstrom"></div>
+<script>
+    let img="./1.jpg"
+    
+
+    let item={flipcart:img}
+    let allimage=[item,item,item]
+
+    let sudarshan=document.getElementById('vstrom')
+    allimage.map((chitradurga)=>{
+        console.log(chitradurga.flipcart)
+
+        let prathap=document.createElement('img')
+        prathap.src=chitradurga.flipcart
+        prathap.style.height="200px"
+        sudarshan.appendChild(prathap)
+    })
+</script>

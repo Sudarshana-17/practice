@@ -1,0 +1,26 @@
+<script>
+    function calculator(whattypeofwork,worker){
+        return worker(whattypeofwork)
+    }
+    function worker(whattypeofwork){
+        if(whattypeofwork=="+"){
+        return 10+20
+    }
+    
+        if(whattypeofwork=="-"){
+        return 10-20
+    }
+   
+        if(whattypeofwork=="*"){
+        return 10*20
+    }
+    
+        if(whattypeofwork=="/"){
+        return 10/20
+    }
+}
+    console.log(worker("+"))
+    console.log(worker("-"))
+    calculator
+    console.log(calculator("+",worker))
+</script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center><h1>guessing game</h1>
+    <h1 id="num">number</h1>
+    <button onclick="randomnumber()">click a random number</button></center>
+
+    <script>
+        function randomnumber(){
+           let num= document.getElementById('num')
+            logic=Math.floor(Math.random()*7+1)
+            console.log(logic)
+            if(logic===1){
+                num.innerHTML="sunday"
+            }
+            if(logic===2){
+                num.innerHTML="monday"
+            }
+            if(logic===3){
+                num.innerHTML="tuesday"
+            }
+            if(logic===4){
+                num.innerHTML="wednesday"
+            }
+            if(logic===5){
+                num.innerHTML="thursday"
+            }
+            if(logic===6){
+                num.innerHTML="friday"
+            }
+            if(logic===7){
+                num.innerHTML="saturday"
+            }
+            
+        }
+        randomnumber()
+    </script>
+</body>
+</html>

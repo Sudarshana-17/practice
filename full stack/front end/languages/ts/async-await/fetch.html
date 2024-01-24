@@ -1,0 +1,7 @@
+<script>
+    async function apiapplication(){
+        let  data=fetch('https://fakestoreapi.com/products')
+        console.log(await(await data).json())
+    }
+    apiapplication()
+</script>

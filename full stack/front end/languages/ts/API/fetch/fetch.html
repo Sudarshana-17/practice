@@ -1,0 +1,7 @@
+<script>
+    let data=fetch('https://fakestoreapi.com/product')
+    console.log(data)
+    data.then((room)=>{return room.json()})
+    data.then((r)=>{console.log(r)})
+    data.catch((r)=>{console.log("iam error")})
+</script>

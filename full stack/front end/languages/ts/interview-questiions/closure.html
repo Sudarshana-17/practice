@@ -1,0 +1,11 @@
+<script>
+    function parent(){
+        let money=100;
+        function child(){
+            console.log(money)
+        }
+        return child
+    }
+    let c=parent()
+    c()
+</script>
