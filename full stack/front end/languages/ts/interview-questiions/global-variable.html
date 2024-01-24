@@ -1,0 +1,16 @@
+<script>
+function example() {
+    if (true) {
+      var functionScopedVar = 'I am function-scoped';
+      let blockScopedVar = 'I am block-scoped';
+      console.log(blockScopedVar)
+      console.log(functionScopedVar);
+    }
+  
+    console.log(functionScopedVar); // 'I am function-scoped'
+    // blockScopedVar is not accessible here
+    console.log(blockScopedVar)
+  }
+  example()
+</script>
+  

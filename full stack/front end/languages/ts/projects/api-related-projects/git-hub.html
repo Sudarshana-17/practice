@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+        let div = document.getElementById('root')
+        async function git() {
+
+            let sudarshan = fetch('https://api.github.com/users')
+            sudarshan = await (await sudarshan).json()
+            console.log(sudarshan)
+            sudarshan.map((item) => {
+                let login = document.createElement('l')
+                login.innerHTML = login.login
+                div.appendChild(login)
+            })
+        }
+        git()
+    </script>
+</body>
+
+</html>

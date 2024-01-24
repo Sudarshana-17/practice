@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+        let name1 = document.getElementById('root')
+        async function pokemon() {
+            let data = fetch('https://pokeapi.co/api/v2/pokemon/')
+            data = await (await data).json()
+            console.log(data)
+           data.map((item)=>{
+            let count=document.createElement('h1')
+            count.innerHTML=count.name
+            name1.appendChild(count)
+           })
+        }
+        pokemon()
+    </script>
+</body>
+
+</html>

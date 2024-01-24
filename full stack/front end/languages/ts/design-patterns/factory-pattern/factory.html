@@ -1,0 +1,28 @@
+<script>
+    function Developer(name){
+        this.name=name
+        this.type="Developer"
+    }
+ 
+    function Tester(name){
+        this.name=name
+        this.type="Tester"
+    }
+
+    function EmployeFactory(){
+        this.create=(name,type)=>{
+            switch(type){
+                case 1:
+                    return new Developer(name);
+                    case 2:
+                        return new  Tester(name);
+            }
+        }
+    }
+    const employefactory=new EmployeFactory
+    const emplist=[]
+
+    emplist.push(employefactory.create("sudarshan",1))
+    emplist.push(employefactory.create("jayanth",2))
+    console.log(emplist)
+</script>
